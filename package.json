@@ -1,12 +1,12 @@
 {
-  "name": "mymonero-ws-client",
+  "name": "myqueenero-ws-client",
   "version": "1.0.0",
   "description": "",
   "main": "./src/main/index.js",
   "license": "SEE LICENSE IN LICENSE.txt",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mymonero/mymonero-ws-client.git"
+    "url": "git+https://github.com/myqueenero/myqueenero-ws-client.git"
   },
   "scripts": {
     "test": "mocha"

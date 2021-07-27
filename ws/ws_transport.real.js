@@ -39,7 +39,7 @@ class Class extends ws_transport__base
 		//
 		this.websockets_by_feed_id = {}
 		this.isConnected_by_feed_id = {}
-		this.ws_url_base = args.ws_url_base || 'ws://api.mymonero.com:8091'
+		this.ws_url_base = args.ws_url_base || 'ws://api.myqueenero.xyz:8091'
 	}
 	//
 	connect_feed(args)

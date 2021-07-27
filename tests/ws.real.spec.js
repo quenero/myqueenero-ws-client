@@ -27,8 +27,8 @@
 // THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 "use strict";
-const mymonero = require("../mymonero-core-js/");
-const monero_config = require('../mymonero-core-js/monero_utils/monero_config') 
+const myqueenero = require("../myqueenero-core-js/");
+const queenero_config = require('../myqueenero-core-js/queenero_utils/queenero_config') 
 const assert = require('assert')
 //
 const ws_wireformat = require('../ws/ws_wireformat')
@@ -63,7 +63,7 @@ var sawConfirmTxCbWith_tx_ids = []
 //
 const this_test_transport_path = "../ws/ws_transport.real"
 const ws_transport = new (require(this_test_transport_path))({
-	ws_url_base: "ws://localhost:8888" /* 8888 is real, 8889 is debug */ // 'ws://api.mymonero.com:8091' // also the default for ws_transport.real.js
+	ws_url_base: "ws://localhost:8888" /* 8888 is real, 8889 is debug */ // 'ws://api.myqueenero.xyz:8091' // also the default for ws_transport.real.js
 });
 //
 const client = new (require('../ws/ws_client'))({

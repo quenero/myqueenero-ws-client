@@ -29,8 +29,8 @@
 var use_real_transport = false // configurable by test runner
 //
 "use strict";
-const mymonero = require("../mymonero-core-js/");
-const monero_config = require('../mymonero-core-js/monero_utils/monero_config') 
+const myqueenero = require("../myqueenero-core-js/");
+const queenero_config = require('../myqueenero-core-js/queenero_utils/queenero_config') 
 const assert = require('assert')
 //
 const ws_wireformat = require('../ws/ws_wireformat')
@@ -65,7 +65,7 @@ var sawConfirmTxCbWith_tx_ids = []
 //
 const this_test_transport_path = use_real_transport ? "../ws/ws_transport.real" : "./ws_transport.server_mock" 
 const ws_transport = new (require(this_test_transport_path))({
-	ws_url_base: "ws://localhost:8888" // 'ws://api.mymonero.com:8091' // also the default for ws_transport.real.js
+	ws_url_base: "ws://localhost:8888" // 'ws://api.myqueenero.xyz:8091' // also the default for ws_transport.real.js
 });
 //
 const client = new (require('../ws/ws_client'))({
@@ -115,7 +115,7 @@ const client = new (require('../ws/ws_client'))({
 			if (req_id == first__req_id) {
 				first__gotNTxs += 1;
 				{ // Any testing desired on received subscription-A txs:
-					const reason = mymonero.monero_txParsing_utils.TransactionLockedReason(tx, lastReceived_block_height)
+					const reason = myqueenero.queenero_txParsing_utils.TransactionLockedReason(tx, lastReceived_block_height)
 					assert.equal(0, reason.indexOf("Will be unlocked in"))
 					assert.notEqual(-1, reason.indexOf("10 minutes"))
 				}

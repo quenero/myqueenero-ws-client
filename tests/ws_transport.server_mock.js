@@ -57,7 +57,7 @@ class Class extends ws_transport__base
 			return
 		}
 		{
-			// self.ws = new WebSocket('ws://api.mymonero.com:8443/feed');
+			// self.ws = new WebSocket('ws://api.myqueenero.xyz:8443/feed');
 			// self.ws.on('open', function() { self.isConnected__feed = true; args.connect_fn() });
 			// self.ws.on('message', args.on_message_fn);
 		}

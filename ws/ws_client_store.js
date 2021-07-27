@@ -28,7 +28,7 @@
 
 "use strict";
 const assert = require('assert')
-const JSBigInt = require("../mymonero-core-js/cryptonote_utils/biginteger").BigInteger;
+const JSBigInt = require("../myqueenero-core-js/cryptonote_utils/biginteger").BigInteger;
 const ws_parse_common = require('./ws_parse_common')
 
 class Class
